@@ -23,6 +23,7 @@ public class InvoiceAction extends ActionSupport  {
     @Override
     public void validate() {
         if (invoiceBean.getSubject().isEmpty()) {
+            // hay que ir regysterForm.jsp, en el campo(fielname="invoiceBean") mostra el errormessage
             addFieldError("invoiceBean.subject", "El concepto es obligatorio.");
         }
     }
