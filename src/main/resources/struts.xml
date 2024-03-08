@@ -11,6 +11,7 @@
     <package name="org.demo.actions" namespace="/" extends="struts-default">
         <!--   Ejecuta el metodo execute de RegistryAction -->
         <action name="registry" class="org.demo.actions.RegistryAction" method="execute">
+
             <!-- Si el registryActon es Success ve a registryform.jsp   -->
             <result name="success">registryForm.jsp</result>
         </action>
@@ -20,6 +21,7 @@
 
             <!-- invoceBean es un clase de java donde esta todo el contenido del form -->
             <param name="invoiceBean"  />
+
             <!-- el input apare cuando hay errores  -->
             <result name="input">registryForm.jsp</result>
         </action>

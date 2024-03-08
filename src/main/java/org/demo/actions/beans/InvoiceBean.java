@@ -5,8 +5,17 @@ import java.util.Date;
 public class InvoiceBean {
 
     private String subject;
+    private int value;
     private Date dateFrom;
     private Date dateTo;
+
+    public void setValue(int value){
+        this.value = value;
+    }
+
+    public int getValue(){
+        return this.value;
+    }
 
     public Date getDateFrom() {
         return dateFrom;

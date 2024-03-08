@@ -26,5 +26,9 @@ public class InvoiceAction extends ActionSupport  {
             // hay que ir regysterForm.jsp, en el campo(fielname="invoiceBean") mostra el errormessage
             addFieldError("invoiceBean.subject", "El concepto es obligatorio.");
         }
+        if (invoiceBean.getValue() == 0) {
+            addFieldError("invoiceBean.value", "importe es Obligatorio");
+//        }
+        }
     }
 }
