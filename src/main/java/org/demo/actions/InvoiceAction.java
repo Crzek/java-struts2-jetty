@@ -30,5 +30,11 @@ public class InvoiceAction extends ActionSupport  {
             addFieldError("invoiceBean.value", "importe es Obligatorio");
 //        }
         }
+        if (invoiceBean.getDateFrom() == null){
+            addFieldError("invoiceBean.DateFrom","Pon una Fecha");
+        }
+        if (invoiceBean.getDateTo() == null){
+            addFieldError("invoiceBean.DateFrom","Pon una Fecha");
+        }
     }
 }
