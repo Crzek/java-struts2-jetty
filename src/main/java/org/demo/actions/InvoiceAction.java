@@ -34,7 +34,7 @@ public class InvoiceAction extends ActionSupport  {
             addFieldError("invoiceBean.DateFrom","Pon una Fecha");
         }
         if (invoiceBean.getDateTo() == null){
-            addFieldError("invoiceBean.DateFrom","Pon una Fecha");
+            addFieldError("invoiceBean.dateTo","Pon una Fecha");
         }
     }
 }
